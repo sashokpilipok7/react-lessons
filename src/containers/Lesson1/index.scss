@@ -1,0 +1,19 @@
+.user-card {
+  border: 1px solid grey;
+  width: 320px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post {
+  border: 1px solid grey;
+  margin-bottom: 16px;
+  &-likes {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid red;
+  }
+}

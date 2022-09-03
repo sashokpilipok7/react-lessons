@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, Redirect } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 
 import Home from "./containers/Home";
 import Lesson1 from "./containers/Lesson1";

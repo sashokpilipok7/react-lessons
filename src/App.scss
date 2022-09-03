@@ -1,0 +1,70 @@
+$violet: rgb(112, 76, 182);
+
+.App {
+  text-align: center;
+  &-title {
+    color: $violet;
+  }
+  &-logo {
+    height: 40vmin;
+    pointer-events: none;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: App-logo-float infinite 3s ease-in-out;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 56px;
+    font-size: 24px;
+    background: #ebebeb;
+    margin-bottom: 24px;
+    a {
+      text-decoration: none;
+    }
+  }
+  &-link {
+    color: $violet;
+  }
+  &-preview {
+    background: rgb(112 76 182 / 19%);
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    &_title {
+      margin-top: 0;
+      color: $violet;
+    }
+    &_list {
+      width: fit-content;
+      margin: auto;
+      padding: 0;
+      text-align: left;
+      li {
+        line-height: 24px;
+        font-size: 20px;
+      }
+    }
+  }
+  &-section {
+    padding: 40px;
+    &:nth-child(2n) {
+      background: #ebebeb;
+    }
+  }
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
