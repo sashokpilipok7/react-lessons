@@ -42,7 +42,7 @@ const phonesList = ["Life", "KuivStart", "Vodafone", "Beline", "UkrTelekom"];
 function SimpleList(props) {
   console.log(props.list);
   return props.list.map((item) => {
-    return <p>{item}</p>;
+    return <p key={item}>{item}</p>;
   });
 }
 
@@ -59,7 +59,6 @@ function Lesson1() {
           <li>Робота з множиною компонентів</li>
           <li>Використання пропсів для передачі данних між компонентами</li>
           <li>Рендер list of data</li>
-          <li>Вступ в react-router-dom</li>
         </ul>
       </div>
       <div className="App-section">
